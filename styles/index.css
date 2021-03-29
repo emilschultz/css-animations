@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  background-color: #e4d5b4;
+  font-family: "Staatliches", cursive;
+  text-align: center;
+  align-items: center;
+}
+/* BAGGRUND TEKSTUR ANIMATION */
+body:after {
+  animation: grain 8s steps(4) infinite;
+  background-image: url("../images/noise-2.png");
+  content: "";
+  height: 300%;
+  left: -50%;
+  position: fixed;
+  top: -100%;
+  width: 300%;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+@keyframes grain {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(7%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%, 0%);
+  }
+  70% {
+    transform: translate(0%, 15%);
+  }
+  80% {
+    transform: translate(3%, 35%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* INTRO TEXT */
+article {
+  margin: 2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+article > h1 {
+  font-size: 5rem;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+  color: black;
+}
+
+article > p {
+  width: 95%;
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 1.5;
+  color: black;
+}
+
+.highlight-text {
+  color: #ef5435;
+}
+
+article a {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  margin: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-out 0.2s;
+}
+
+article a:hover {
+  background-color: #ef5435;
+  transition: ease-in 0.2s;
+}
+
+/* INTRO TEXT CHANGES SIZE WHEN SCREEN IS MORE THAN 750PX WIDE */
+@media (min-width: 750px) {
+  article > p {
+    width: 75%;
+    font-size: 2rem;
+  }
+}
+
+/* SECTION - RESPONSIVT GRID */
+section {
+  height: 75vh;
+  display: grid;
+  grid-template-columns: repeat(32rem, 3fr);
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  gap: 2rem;
+}
+/* ALL SIZES ABOVE "IPAD-SIZE" (768PX WIDE) = */
+@media (min-width: 769px) {
+  section {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0rem 10rem 0rem 10rem;
+  }
+
+  article {
+    height: 100vh;
+  }
+  .illustration-heading {
+    padding-top: 2.5rem;
+  }
+}
+
+/* ILLUSTRATIONER */
+div {
+  width: 20rem;
+  height: 40rem;
+  padding: 1rem 0rem 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div h1 {
+  font-size: 2rem;
+}
+
+.illustration-heading {
+  width: 20rem;
+  margin: 3rem 0rem 0rem 0rem;
+  line-height: 1.5;
+}
+
+.illustration-paragraph {
+  width: 20rem;
+  margin: 1rem 0rem 0rem 0rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+h1 {
+  line-height: 3;
+}
+
+#ship {
+  width: 32rem;
+  transition: 1s ease-in-out;
+}
+
+@media (max-width: 32rem) {
+  #ship {
+    width: 28rem;
+    transition: 1s ease-in-out;
+  }
+  section {
+    width: 100vw;
+  }
+}

@@ -1,0 +1,154 @@
+/* PLAY ANIMATION */
+.toxic-play {
+    animation-play-state: paused;
+}
+
+/* SMOKE */
+.smoke {
+    animation-name: show-smoke;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    transform-origin: bottom;
+    transition: linear;
+    animation-fill-mode: forwards;
+}
+
+    @keyframes show-smoke {
+        0% {
+            opacity: 0;
+            transform: rotate(2deg);
+        }
+        33% {
+            transform: rotate(0deg);
+        }
+        66% {
+            transform: rotate(2deg);
+        }
+        100% {
+            opacity: 1;
+            transform: rotate(0deg);
+
+        }
+    }
+
+.cranium {
+    animation-name: cranium-shake;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    transform-origin: center;
+    transform-box: fill-box;
+    transition: ease-in-out;
+}
+
+    @keyframes cranium-shake {
+        0% {
+            transform: rotate(0deg);
+        }
+        80% {
+            transform: rotate(300deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }
+    }
+
+.bones {
+    animation-name: shake-bones;
+    animation-duration: .5s;
+    transform-origin: center;
+    transform-box: fill-box;
+    transition: ease-in-out;
+    animation-delay: 2s;
+}
+
+    @keyframes shake-bones {
+        0% {
+            transform: rotate(0deg);
+        }
+        20% {
+            transform: rotate(3deg);
+        }
+        40% {
+            transform: rotate(0deg);
+        }
+        60% {
+            transform: rotate(3deg); 
+        }
+        80% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(3deg);
+        }   
+    } 
+
+.after-shake {
+    animation-name: shake-after;
+    animation-duration: .5s;
+    transform-origin: center;
+    transform-box: fill-box;
+    transition: ease-in-out;
+    animation-delay: 2s;
+}
+
+    @keyframes shake-after {
+        0% {
+            transform: rotate(0deg);
+        }
+        20% {
+            transform: rotate(3deg);
+        }
+        40% {
+            transform: rotate(0deg);
+        }
+        60% {
+            transform: rotate(3deg); 
+        }
+        80% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(3deg);
+        }   
+    } 
+
+.animate-again {
+    animation-name: cranium-shake;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    transform-origin: center;
+    transform-box: fill-box;
+    transition: ease-in-out;
+}
+
+    @keyframes cranium-shake {
+        0% {
+            transform: rotate(0deg);
+        }
+        80% {
+            transform: rotate(300deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }
+    }
+
+.toxic-text {
+    animation-name: text-appear;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    transform-origin: top;
+    transition: ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+    
+    @keyframes text-appear {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }

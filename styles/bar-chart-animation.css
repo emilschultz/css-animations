@@ -1,0 +1,177 @@
+/* -------------------------------------------------------------------------*/
+/* BAR CHART */
+/* -------------------------------------------------------------------------*/
+
+/* PLAY STATE */
+.graph-play {
+    animation-play-state: paused;
+}
+
+
+/* YELLOW BAR */
+
+.yellow-bar {
+    animation-name: grow-yellow-bar;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    transform-origin: bottom center;
+    transition: ease-in-out;
+}
+
+@keyframes grow-yellow-bar {
+    0% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }  
+}
+
+/* GREEN BAR */
+.tall-green-bar {
+    animation-name: grow-tall-green-bar;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    transform-origin: bottom center;
+    transition: ease-in-out;
+}
+
+@keyframes grow-tall-green-bar {
+    0%{
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+/* RED BAR */
+.red-bar {
+    animation-name: grow-red-bar;
+    animation-duration: 3.5s;
+    animation-iteration-count: 1;
+    transform-origin: bottom center;
+    transition: ease-in-out;
+}
+
+@keyframes grow-red-bar {
+    0%{
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+/* LIGHT GREEN BAR */
+.light-green-bar {
+    animation-name: light-green-bar;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    transform-origin: bottom center;
+    transition: ease-in-out;
+}
+
+@keyframes light-green-bar {
+    0%{
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+/* SMALL GREEN BAR */
+.small-green-bar {
+    animation-name: grow-small-green-bar;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    transform-origin: bottom center;
+    transition: ease-in-out;
+}
+
+@keyframes grow-small-green-bar {
+    0%{
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+
+/* BOTTOM LINE */
+.bottom-line {
+    animation-name: grow-bottom-line;
+    animation-duration: 2.8s;
+    animation-iteration-count: 1;
+    transform-origin: bottom center;
+    transition: ease-out;
+}
+
+@keyframes grow-bottom-line {
+    0% {
+        transform: scaleX(-2);
+    }
+    50% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.bottom-line-animate {
+    animation-name: animate-bottom-line;
+    animation-duration: 2.8s;
+    animation-iteration-count: 1;
+    transform-origin: bottom center;
+    transition: ease-out;
+}
+
+@keyframes animate-bottom-line {
+    0% {
+        transform: scaleX(-2);
+    }
+    50% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.bar-text {
+    animation-name: text-appear;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    transform-origin: top;
+    transition: ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+@keyframes text-appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
