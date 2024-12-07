@@ -2,456 +2,456 @@
 /* SHIP */
 /* -------------------------------------------------------------------------*/
 
+#ship {
+  cursor: pointer;
+}
+
 .ship-play {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 /* -------------------------------------------------------------------------*/
 /* POLES */
 /* -------------------------------------------------------------------------*/
 
-.poles { /* ALL POLES */
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    transition: ease-in-out;
-    opacity: 0;
-    animation-fill-mode: forwards;   
+.poles {
+  /* ALL POLES */
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  transition: ease-in-out;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 
 .pole-1 {
-    animation-name: drop-pole-1;
-    animation-delay: .1s; 
+  animation-name: drop-pole-1;
+  animation-delay: 0.1s;
 }
 
 @keyframes drop-pole-1 {
-
-    from {
-        transform: translateY(-30rem);
-        opacity: 0%;
-    }
-    to {
-        transform: translateY(0rem);
-        opacity: 100%;
-    }
+  from {
+    transform: translateY(-30rem);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 100%;
+  }
 }
 
 .pole-2 {
-    animation-name: drop-pole-2;
-    animation-delay: .5s; 
+  animation-name: drop-pole-2;
+  animation-delay: 0.5s;
 }
 
 @keyframes drop-pole-2 {
-
-    from {
-        transform: translateY(-15rem);
-        opacity: 0%;
-    }
-    to {
-        transform: translateY(0rem);
-        opacity: 100%;
-    }
+  from {
+    transform: translateY(-15rem);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 100%;
+  }
 }
 
-
 .pole-3 {
-    animation-name: drop-pole-3;    
-    animation-delay: .9s; 
+  animation-name: drop-pole-3;
+  animation-delay: 0.9s;
 }
 
 @keyframes drop-pole-3 {
-
-    from {
-        transform: translateY(-30rem);
-        opacity: 0%;
-    }
-    to {
-        transform: translateY(0rem);
-        opacity: 100%;
-    }
+  from {
+    transform: translateY(-30rem);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 100%;
+  }
 }
 
 .pole-4 {
-    animation-name: drop-pole-4;
-    animation-delay: 1.2s; 
+  animation-name: drop-pole-4;
+  animation-delay: 1.2s;
 }
 
 @keyframes drop-pole-4 {
-
-    from {
-        transform: translateY(-30rem);
-        opacity: 0%;
-    }
-    to {
-        transform: translateY(0rem);
-        opacity: 100%;
-    }
+  from {
+    transform: translateY(-30rem);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 100%;
+  }
 }
 
 /* -------------------------------------------------------------------------*/
 /* CONTAINERS - CARGO */
 /* -------------------------------------------------------------------------*/
 
-.container { /* ALL CONTAINERS */
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    transition: ease-in-out;
-    opacity: 0;
-    animation-fill-mode: forwards;
+.container {
+  /* ALL CONTAINERS */
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  transition: ease-in-out;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 
 .container-1 {
-    animation-name: drop-container-1;
-    animation-delay: .6s;
+  animation-name: drop-container-1;
+  animation-delay: 0.6s;
 }
 
 @keyframes drop-container-1 {
-    from {
-        transform: translateY(-2rem);
-        opacity: 0%;
-    }
-    to {
-        transform: translateY(0rem);
-        opacity: 100%;
-    }
+  from {
+    transform: translateY(-2rem);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 100%;
+  }
 }
 
 .container-2 {
-    animation-name: drop-container-2;
-    animation-delay: .6s;
+  animation-name: drop-container-2;
+  animation-delay: 0.6s;
 }
 
 @keyframes drop-container-2 {
-    from {
-        transform: translateY(-2.8rem);
-        opacity: 0%;
-    }
-    to {
-        transform: translateY(0rem);
-        opacity: 100%;
-    }
+  from {
+    transform: translateY(-2.8rem);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 100%;
+  }
 }
 
 .container-3 {
-    animation-name: drop-container-1;
-    animation-delay: .6s;
+  animation-name: drop-container-1;
+  animation-delay: 0.6s;
 }
 
 @keyframes drop-container-3 {
-    from {
-        transform: translateY(-2.8rem);
-        opacity: 0%;
-    }
-    to {
-        transform: translateY(0rem);
-        opacity: 100%;
-    }
+  from {
+    transform: translateY(-2.8rem);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 100%;
+  }
 }
 
 .container-4 {
-    animation-name: drop-container-4;
-    animation-delay: .6s;
+  animation-name: drop-container-4;
+  animation-delay: 0.6s;
 }
 
 @keyframes drop-container-4 {
-    from {
-        transform: translateY(-3.5rem);
-        opacity: 0%;
-    }
-    to {
-        transform: translateY(0rem);
-        opacity: 100%;
-    }
+  from {
+    transform: translateY(-3.5rem);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 100%;
+  }
 }
 
 .container-5 {
-    animation-name: drop-container-5;
-    animation-delay: .6s;
+  animation-name: drop-container-5;
+  animation-delay: 0.6s;
 }
 
 @keyframes drop-container-5 {
-    from {
-        transform: translateY(-2.9rem);
-        opacity: 0%;
-    }
-    to {
-        transform: translateY(0rem);
-        opacity: 100%;
-    }
+  from {
+    transform: translateY(-2.9rem);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 100%;
+  }
 }
 
 .container-6 {
-    animation-name: drop-container-6;
-    animation-delay: .6s;
+  animation-name: drop-container-6;
+  animation-delay: 0.6s;
 }
 
 @keyframes drop-container-6 {
-    from {
-        transform: translateY(-5rem);
-        opacity: 20%;
-    }
-    to {
-        transform: translateY(0rem);
-        opacity: 100%;
-    }
+  from {
+    transform: translateY(-5rem);
+    opacity: 20%;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 100%;
+  }
 }
 
 .container-7 {
-    animation-name: drop-container-7;
-    animation-delay: .6s;
+  animation-name: drop-container-7;
+  animation-delay: 0.6s;
 }
 
 @keyframes drop-container-7 {
-    from {
-        transform: translateY(-6.5rem);
-        opacity: 0%;
-    }
-    to {
-        transform: translateY(0rem);
-        opacity: 100%;
-    }
+  from {
+    transform: translateY(-6.5rem);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 100%;
+  }
 }
 
 .container-8 {
-    animation-name: drop-container-8;
-    animation-delay: .6s;
+  animation-name: drop-container-8;
+  animation-delay: 0.6s;
 }
 
 @keyframes drop-container-8 {
-    from {
-        transform: translateY(-4rem);
-        opacity: 0%;
-    }
-    to {
-        transform: translateY(0rem);
-        opacity: 100%;
-    }
+  from {
+    transform: translateY(-4rem);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 100%;
+  }
 }
 
 .container-9 {
-    animation-name: drop-container-9;
-    animation-delay: .6s;
+  animation-name: drop-container-9;
+  animation-delay: 0.6s;
 }
 
 @keyframes drop-container-9 {
-    from {
-        transform: translateY(-6rem);
-        opacity: 0%;
-    }
-    to {
-        transform: translateY(0rem);
-        opacity: 100%;
-    }
+  from {
+    transform: translateY(-6rem);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 100%;
+  }
 }
 
 .container-10 {
-    animation-name: drop-container-10;
-    animation-delay: .6s;
+  animation-name: drop-container-10;
+  animation-delay: 0.6s;
 }
 
 @keyframes drop-container-10 {
-    from {
-        transform: translateY(-5rem);
-        opacity: 0%;
-    }
-    to {
-        transform: translateY(0rem);
-        opacity: 100%;
-    }
+  from {
+    transform: translateY(-5rem);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 100%;
+  }
 }
 
 .container-11 {
-    animation-name: drop-container-11;
-    animation-delay: .6s;
+  animation-name: drop-container-11;
+  animation-delay: 0.6s;
 }
 
 @keyframes drop-container-11 {
-    from {
-        transform: translateY(-3.3rem);
-        opacity: 0%;
-    }
-    to {
-        transform: translateY(0rem);
-        opacity: 100%;
-    }
+  from {
+    transform: translateY(-3.3rem);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 100%;
+  }
 }
 
 .container-12 {
-    animation-name: drop-container-12;
-    animation-delay: .6s;
+  animation-name: drop-container-12;
+  animation-delay: 0.6s;
 }
 
 @keyframes drop-container-12 {
-    from {
-        transform: translateY(-2.6rem);
-        opacity: 0%;
-    }
-    to {
-        transform: translateY(0rem);
-        opacity: 100%;
-    }
+  from {
+    transform: translateY(-2.6rem);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 100%;
+  }
 }
 
 .container-13 {
-    animation-name: drop-container-13;
-    animation-delay: .6s;
+  animation-name: drop-container-13;
+  animation-delay: 0.6s;
 }
 
 @keyframes drop-container-13 {
-    from {
-        transform: translateY(-4rem);
-        opacity: 0%;
-    }
-    to {
-        transform: translateY(0rem);
-        opacity: 100%;
-    }
+  from {
+    transform: translateY(-4rem);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 100%;
+  }
 }
 
 .container-14 {
-    animation-name: drop-container-14;
-    animation-delay: .6s;
+  animation-name: drop-container-14;
+  animation-delay: 0.6s;
 }
 
 @keyframes drop-container-14 {
-    from {
-        transform: translateY(-6rem);
-        opacity: 0%;
-    }
-    to {
-        transform: translateY(0rem);
-        opacity: 100%;
-    }
+  from {
+    transform: translateY(-6rem);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 100%;
+  }
 }
 
 .container-15 {
-    animation-name: drop-container-15;
-    animation-delay: .6s;
+  animation-name: drop-container-15;
+  animation-delay: 0.6s;
 }
 
 @keyframes drop-container-15 {
-    from {
-        transform: translateY(-7.5rem);
-        opacity: 0%;
-    }
-    to {
-        transform: translateY(0rem);
-        opacity: 100%;
-    }
+  from {
+    transform: translateY(-7.5rem);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 100%;
+  }
 }
 
 .container-16 {
-    animation-name: drop-container-16;
-    animation-delay: .6s;
+  animation-name: drop-container-16;
+  animation-delay: 0.6s;
 }
 
 @keyframes drop-container-16 {
-    from {
-        transform: translateY(-7rem);
-        opacity: 0%;
-    }
-    to {
-        transform: translateY(0rem);
-        opacity: 100%;
-    }
+  from {
+    transform: translateY(-7rem);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 100%;
+  }
 }
 
 .container-17 {
-    animation-name: drop-container-17;
-    animation-delay: .6s;
+  animation-name: drop-container-17;
+  animation-delay: 0.6s;
 }
 
 @keyframes drop-container-17 {
-    from {
-        transform: translateY(-10rem);
-        opacity: 0%;
-    }
-    to {
-        transform: translateY(0rem);
-        opacity: 100%;
-
-    }
+  from {
+    transform: translateY(-10rem);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 100%;
+  }
 }
 
 .container-18 {
-    animation-name: drop-container-18;
-    animation-delay: .6s;
+  animation-name: drop-container-18;
+  animation-delay: 0.6s;
 }
 
 @keyframes drop-container-18 {
-    from {
-        transform: translateY(-12rem);
-        opacity: 0%;
-    }
-    to {
-        transform: translateY(0rem);
-        opacity: 100%;
-    }
+  from {
+    transform: translateY(-12rem);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 100%;
+  }
 }
 
 .container-19 {
-    animation-name: drop-container-19;
-    animation-delay: .6s;
+  animation-name: drop-container-19;
+  animation-delay: 0.6s;
 }
 
 @keyframes drop-container-19 {
-    from {
-        transform: translateY(-23rem);
-        opacity: 0%;
-    }
-    to {
-        transform: translateY(0rem);
-        opacity: 100%;
-    }
+  from {
+    transform: translateY(-23rem);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 100%;
+  }
 }
 
 .container-20 {
-    animation-name: drop-container-20;
-    animation-delay: .6s;
+  animation-name: drop-container-20;
+  animation-delay: 0.6s;
 }
 
 @keyframes drop-container-20 {
-    from {
-        transform: translateY(-4rem);
-        opacity: 0%;
-    }
-    to {
-        transform: translateY(0rem);
-        opacity: 100%;
-    }
+  from {
+    transform: translateY(-4rem);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 100%;
+  }
 }
 
 .container-21 {
-    animation-name: drop-container-21;    
-    animation-delay: .5s;
+  animation-name: drop-container-21;
+  animation-delay: 0.5s;
 }
 
 @keyframes drop-container-21 {
-    from {
-        transform: translateY(-9rem);
-        opacity: 0%;
-    }
-    to {
-        transform: translateY(0rem);
-        opacity: 100%;
-    }
+  from {
+    transform: translateY(-9rem);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 100%;
+  }
 }
 
 .ship-text {
-    animation-name: text-appear;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    transform-origin: top;
-    transition: ease-in-out;
-    opacity: 0;
-    animation-fill-mode: forwards;
-    animation-delay: 2s;
+  animation-name: text-appear;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  transform-origin: top;
+  transition: ease-in-out;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
 }
 
 @keyframes text-appear {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
